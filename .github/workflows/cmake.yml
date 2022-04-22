@@ -30,6 +30,8 @@ jobs:
         mkdir ${{github.workspace}}/3rdparty/${GOOGLE_TEST_DIR}
         wget https://github.com/google/googletest/archive/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip -O ${{github.workspace}}/temp/googletest.zip
         unzip ${{github.workspace}}/temp/googletest.zip -d ${CMAKE_BINARY_DIR}/../3rdparty/
+        
+
     - name: Configure CMake
       # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
       # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
